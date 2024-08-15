@@ -75,6 +75,7 @@ const Login = () => {
               <input
                 type="email"
                 placeholder="email"
+                defaultValue={"ali@gmail.com"}
                 className="input input-bordered"
                 name="email"
                 required
@@ -88,6 +89,7 @@ const Login = () => {
                 type="password"
                 placeholder="password"
                 className="input input-bordered"
+                defaultValue={"123456"}
                 name="password"
                 required
               />
