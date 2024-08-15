@@ -146,7 +146,13 @@ const Navbar = () => {
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              <img alt="" src={user?.photoURL || "/public/placeholder.jpg"} />
+              <img
+                alt=""
+                src={
+                  user?.photoURL ||
+                  "https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1677509740.jpg"
+                }
+              />
             </div>
           </label>
           <ul
