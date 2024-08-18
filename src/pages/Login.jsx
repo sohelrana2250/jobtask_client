@@ -48,75 +48,83 @@ const Login = () => {
   }, [user, from, navigate]);
 
   return (
-    <form onSubmit={handleSUbmit} className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left ">
-          <h1 className="text-2xl text-center font-serif">Login Now</h1>
-          <p className="py-1">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti excepturi exercitationem
-            quasi. In deleniti
-          </p>
-          <div className="avatar">
-            <div className="w-96 rounded-xl">
-              <img
-                src="https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg"
-                alt=""
-              />
+    <>
+      <form onSubmit={handleSUbmit} className="hero min-h-screen bg-base-200">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <div className="text-center lg:text-left ">
+            <h1 className="text-2xl text-center font-serif">Login Now</h1>
+            <p className="py-1">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti excepturi
+              exercitationem quasi. In deleniti
+            </p>
+            <div className="avatar">
+              <div className="w-96 rounded-xl">
+                <img
+                  src="https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
-          <div className="card-body">
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Email</span>
-              </label>
-              <input
-                type="email"
-                placeholder="email"
-                defaultValue={"ali@gmail.com"}
-                className="input input-bordered"
-                name="email"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Password</span>
-              </label>
-              <input
-                type="password"
-                placeholder="password"
-                className="input input-bordered"
-                defaultValue={"123456"}
-                name="password"
-                required
-              />
-            </div>
+          <div className="card shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
+            <div className="card-body">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="email"
+                  defaultValue={"ali@gmail.com"}
+                  className="input input-bordered"
+                  name="email"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Password</span>
+                </label>
+                <input
+                  type="password"
+                  placeholder="password"
+                  className="input input-bordered"
+                  defaultValue={"123456"}
+                  name="password"
+                  required
+                />
+              </div>
 
-            <div className="form-control mt-6">
-              <input
-                className="btn bg-red-500 text-white"
-                type="submit"
-                value="Login"
-              />
-            </div>
-            <div className="mt-6">
-              <GoogleLogin />
-            </div>
-            <div className="mt-6">
+              <div className="form-control mt-6">
+                <input
+                  className="btn bg-red-500 text-white"
+                  type="submit"
+                  value="Login"
+                />
+              </div>
               <p>
-                New here?{" "}
-                <Link to="/register" className="text-red-500">
-                  Register
-                </Link>
+                <b>User Email Address :</b> abdullah@gmail.com
               </p>
+              <p>
+                <b>Password:</b>123456
+              </p>
+              <div className="mt-6">
+                <GoogleLogin />
+              </div>
+              <div className="mt-6">
+                <p>
+                  New here?{" "}
+                  <Link to="/register" className="text-red-500">
+                    Register
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </>
   );
 };
 
